@@ -1,0 +1,11 @@
+div {
+    display: grid;
+    place-items: center;
+  }
+
+.btn{
+    background-color :midnightblue;
+    color: white;
+    font-size: larger;
+    font-family: cursive;
+}

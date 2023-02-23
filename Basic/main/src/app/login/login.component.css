@@ -1,0 +1,31 @@
+
+.full-width{
+    width: 100%;
+}
+
+
+.siz{
+    width:10cm;
+    margin-left: 17cm;
+    box-shadow: 5px 10px 18px rgb(53, 234, 212);
+    margin-top:10px;
+}
+
+.top-padding{
+    padding-top: 3px;
+}
+
+.form-container{
+    margin: 100px;
+}
+
+.invalid{
+    color:red;
+}
+.small-font{
+    font-size: 12px;
+}
+
+.bg{
+    height: 30px;
+}

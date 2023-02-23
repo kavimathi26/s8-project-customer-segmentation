@@ -1,0 +1,38 @@
+<ul class="nav navbar-nav" style="background-color:rgb(52, 234, 212);">
+  <h1 style="color:rgb(99, 97, 73) ;text-align:center">Customer Base Modularization & Anatomization Application</h1>
+</ul>
+<form [formGroup]="profileForm" #ngForm="ngForm" class="form-container">
+  <div class="bg">
+    <img src="assets/c.webp" style="width: 12cm;">
+  </div>
+  <div class="siz">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          User Login <span *ngIf="ngForm.submitted && !profileForm.valid" class="small-font"
+            [ngClass]="{'invalid': ngForm.submitted }">* required</span>
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <div class="row">
+          <div class="col-md-6">
+            <mat-form-field class="full-width">
+              <input formControlName="Username" type="text" matInput placeholder="Username">
+            </mat-form-field>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <mat-form-field class="full-width">
+              <input formControlName="Password" type="password" matInput placeholder="Password">
+            </mat-form-field>
+          </div>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button (click)="saveForm()" mat-raised-button color="primary">Login</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</form>

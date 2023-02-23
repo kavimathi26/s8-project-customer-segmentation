@@ -1,0 +1,29 @@
+<ul class="nav navbar-nav" style="background-color:rgb(240, 214, 69);">
+	<h1 style="color:rgb(99, 97, 73) ;text-align:center">Customer Base Modularization & Anatomization Application</h1>
+</ul>
+<br><br>
+<div class="im">
+	<img src="assets/db2.avif" style="width: 15cm ;">
+</div>
+<div class="bb">
+	<br>
+	<input class="form-control" type="file" [accept]="'.csv'" (change)="onChange($event)">
+	<br>
+	<br>
+	<h3 style="color:rgb(0, 0, 0);">Upload your dataset here to proceed the prediction</h3>
+	<img src="assets/dataset1.png" style="width: 2cm ;">
+	<br>
+	<br>
+	<button (click)="onUpload()" mat-raised-button color="primary" type="submit">
+
+		Upload
+	</button>
+	<br>
+	<br>
+</div>
+<br><br>
+
+<div class="bb2" *ngIf="loading">
+	<h3>The Results will be Popped up!</h3>
+</div>
+<br><br>
